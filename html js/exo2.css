@@ -1,0 +1,22 @@
+
+
+body{
+     width: 1250px;
+     height: 860px;
+     margin: 0 auto;
+     font-family: "Times New Roman", Times, serif;
+     font-size: 20px
+}
+
+q {
+    color: rgb(139, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+
+}
+
+time {
+    color:rgb(139, 0, 183);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+}

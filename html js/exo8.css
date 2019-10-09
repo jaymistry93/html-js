@@ -1,0 +1,57 @@
+page{
+	width: 1250px;
+	height: 860px;
+	margin: 0 auto
+}
+
+#first{
+	font-variant-caps: small-caps;
+	font-family: serif,Times New Roman, Georgia;
+        color: blue;
+        
+}
+
+
+
+#second{
+	font-variant-caps: small-caps;
+	font-family: serif,Times New Roman, Georgia;
+        color: red;
+        
+}
+
+#third{
+	font-variant-caps: small-caps;
+	font-family: serif,Times New Roman, Georgia;
+        color: green;
+        
+}
+
+#forth{
+	font-variant-caps: small-caps;
+	font-family: serif,Times New Roman, Georgia;
+        color: pink;
+        
+}
+
+p::first-letter{
+font-size: 130%;
+}
+
+p[lang="fr"]:before{
+	color: rgb(173, 66, 244);
+	font-variant-caps: small-caps;
+	text-indent: 0em;
+	content: "français";
+	display: block;
+}
+
+p[lang="la"]:before{
+	color:rgb(244, 83, 65);
+	font-variant-caps: small-caps;
+	text-indent: 0em;
+	content: "latin";
+	display: block;
+}
+
+

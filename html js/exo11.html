@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ma page</title>
+    <meta charset="utf-8">
+    <link href="time.css" rel="stylesheet" type="text/css">
+  
+  </head>
+
+  <body>
+
+    <script>
+      	<script>
+		function AfficheHeure(){
+		var dt = new Date();
+
+		var h = dt.getHours();
+		if(h<10){
+			h="0"+h;
+		}
+
+		var m = dt.getMinutes();
+		if(m<10){
+			m = "0"+m;
+		}
+
+		var s = dt.getSeconds();
+		if(s<10){
+			s = "0"+s;
+		}
+		window.document.title = ""+h+" : "+m+ " : "+s;
+		//var timer = setTimeout("AfficheHeure()",1000);
+	}
+	AfficheHeure();
+	var timer = setInterval("AfficheHeure()",1000);
+		
+	</script>
+
+</p>
+
+	<script>
+		function printHorloge(){
+			if(document.getElementById){
+				var txtHorloge= "<div id=\"horlogeDiv\"></div>";
+				document.write(txtHorloge);
+				updateHorloge();
+			}
+		}
+		function updateHorloge(){
+			var dt = new Date();
+			var jours = Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+			var mois = Array("Janvier", "Février", "Mars.", "Avril", "Mai", "Juin", "Juillet", "Aout", 
+				"Septembre","Octobre" ,"Novembre", "Decembre");
+			var Y = dt.getFullYear();
+			var M = mois[dt.getMonth()];
+			var D = dt.getDate();
+			if(D==1){
+				D="1er";
+			}
+			var J = jours[dt.getDay()];
+			var h = dt.getHours();
+
+			if(h < 10){
+				h = "0"+h;
+			}
+
+			var m = dt.getMinutes();
+			if(m < 10){
+				m = "0"+m;
+			}
+
+			var s = dt.getSeconds();
+			if(s < 10){
+				s = "0"+s;
+			}
+
+			document.getElementById("horlogeDiv").innerHTML = J + " " + D + " " +M +" "+Y+"<br/> " + h +" : "+m+" : "+s ;
+			setTimeout("updateHorloge()",1000);
+		}
+	</script>
+	<script type="text/css">
+		#horlogeDiv{
+		width: 150 px;
+		border: 1px solid #0000;
+		font-size: 10 pt ;
+		background-color: #FFFFFF;
+		color : #0000;
+		text-align : center;
+	}
+		
+	</script>
+
+<script>
+	printHorloge();
+</script>
+
+    </script>
+
+
+			   
+	     
+
+  </body>
+
+</html>

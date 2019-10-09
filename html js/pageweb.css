@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    font-style:italic;
+    text-decoration:underline;
+}
+h2 {
+    text-indent:20px;
+    font-style:small;
+}
+body {
+    background-image:url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/05/14/515625f15486bc5.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px 900px;
+}
+

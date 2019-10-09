@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <title>Mon premere page</title>
+       <meta charset= "utf-8">
+       <link rel="stylesheet" href="exo10.css" type="text/css">
+
+  </head>
+
+  <body> 
+
+	<div id="mydiv">
+	</div>
+
+	<table id="tableaux"> 
+	   <tr>
+		 <th>n</th>
+		 <th>F(n)</th>
+
+	  </tr>
+
+	</table>
+
+        <script>
+
+		    var nbEntre = Number(prompt("Entrez un nombre:"));
+		    
+		    var n;
+		    var fn = 0;
+		    var n2 = 1;
+		    var temp;
+			    
+		    
+		    var tableau = document.getElementById("tableaux");
+		    var lignes = tableau.rows;
+
+
+		    for(n = 0; n <= nbEntre; n++)
+		    {                   
+			temp = fn + n2;
+			fn = n2;
+			n2 = temp;
+		
+			var ligne = tableau.insertRow(-1);
+		
+			var colonne1 = ligne.insertCell(0);
+			colonne1.innerHTML += n;
+		
+			var colonne2 = ligne.insertCell(1);
+			colonne2.innerHTML += fn;
+				 
+		    }
+		    
+		    var longueur = lignes.length;    
+		    var i;
+		    for(i = 0; i < longueur; i++)
+		    {
+			if( i % 2 === 0)
+			{
+			    lignes[i].style.backgroundColor = "silver";
+			}
+			else
+			{
+			    lignes[i].style.backgroundColor = "grey";
+			}
+		    }
+         </script>
+
+
+  </body>
+
+</html>
+

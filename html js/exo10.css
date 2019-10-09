@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+
+	border: 1px silver solid;
+        background-color: #FFFAFA ;
+	width: 6cm;
+	padding: 5px;
+
+}
+
+
+table{
+	border-collapse: collapse;
+	text-align: left;
+
+} 
+
+th /*ENTETE*/
+{
+	width: 3cm;
+	height: 0.5cm;
+
+}
+
+td /* TOUTES LES CELLOULES DES TABLEAUX */
+{
+	width: 3cm;
+	height: 0.5cm;
+}
+
+ 
+ 
